@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-box">
+            <div>
+                <h3 class="head">Payment App</h3>
+            </div>
+            
+            <div>
+                <a href="#">Home</a>
+                <a href="./addUser.html">User</a>
+                <a href="./addAccount.html">Account</a>
+                <a href="./allocateAccount.html">Allocate</a>
+                <a href="./payment.html">Payment</a>
+                <a href="./refund.html">Refund</a>
+                <a href="./addMoney.html">Add Money</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="form-container">
+        <div class="form">
+            <form id="addUser">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="userContact" required><br><br>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="userAddress" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="userEmail" required><br><br>
+        
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="userName" required><br><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="userPassword" required><br><br>
+                
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="./js/user.js"></script>
+<script>
+    // document.getElementById('myForm').addEventListener('submit', function(event) {
+    //     event.preventDefault();
+
+    //     const formData = new FormData(event.target);
+
+    //     fetch('http://localhost:8091/payment/user/add', {
+    //         method: 'POST',
+    //         body: JSON.stringify(Object.fromEntries(formData)),
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         }
+    //     })
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         console.log(data);
+    //         alert(data);
+    //     });
+
+    //     // fetch('http://localhost:8091/payment/user/getAll')
+    //     // .then(response => response.text())
+    //     // .then(data => {
+    //     //     console.log(data);
+    //     // });
+    // });
+</script>
+</html>
